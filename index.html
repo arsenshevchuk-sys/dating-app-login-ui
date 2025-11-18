@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід/Реєстрація - Додаток Знайомств</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f3f4f6;
+        }
+        
+        .app-gradient-bg {
+            background: linear-gradient(135deg, #FF6F91 0%, #FF9A9E 50%, #B89AE8 100%);
+        }
+        
+        .mobile-frame {
+            max-width: 420px;
+            width: 100%;
+            height: 90vh;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border-radius: 3rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
 
+        .btn-google {
+            background-color: white;
+            color: #1f2937;
+            border: 1px solid #e5e7eb;
+            transition: background-color 0.15s;
+        }
+        .btn-google:hover {
+            background-color: #f9fafb;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-pink': '#FF6F91',
+                        'secondary-purple': '#B89AE8',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="mobile-frame app-gradient-bg">
+
+        <div class="flex-grow p-8 flex flex-col justify-start items-center text-white text-center">
+            
+            <div class="w-full h-4 mb-8 flex justify-between items-center text-xs font-semibold">
+                <span>9:41</span>
+                <div class="flex space-x-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.636 18.364a9 9 0 010-12.728m12.728 0a9 9 0 010 12.728M12 9v6m-4-3h8"></path></svg>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+            </div>
+
+            <div class="mt-20">
+                <h1 class="text-6xl font-extrabold tracking-tight">S.O.U.L.</h1>
+                <p class="mt-2 text-2xl font-light">Знайдіть свою половинку</p>
+            </div>
+
+            <div class="mt-12 w-48 h-48 bg-white/30 rounded-full flex justify-center items-center backdrop-blur-sm shadow-xl">
+                <span class="text-xl font-semibold">💖</span>
+            </div>
+            
+        </div>
+
+        <div class="p-8 bg-white rounded-t-[2.5rem] shadow-2xl">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Приєднуйтесь до нас</h2>
+
+            <button class="btn-google w-full py-4 mb-4 rounded-full text-lg font-semibold shadow-md flex items-center justify-center">
+                <svg class="w-5 h-5 mr-3" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill="#FFC107" d="M43.6 20.4H24v7h11.3c-.6 3.4-3.5 6.1-7.9 6.1-5.3 0-9.6-4.3-9.6-9.6s4.3-9.6 9.6-9.6c2.5 0 4.6.9 6.3 2.6l4.4-4.2C38.6 10.9 33.6 8 27.6 8c-9.5 0-17.2 7.7-17.2 17.2s7.7 17.2 17.2 17.2c9.3 0 17.2-7.5 17.2-17.2 0-1.2-.1-2.4-.4-3.6z"></path><path fill="#FF3D00" d="M10.4 25.2c0-1.2.2-2.4.5-3.6l-5.1-4c-1.1 2.3-1.8 4.8-1.8 7.6s.7 5.3 1.8 7.6l5.1-4c-.3-1.2-.5-2.4-.5-3.6z"></path><path fill="#4CAF50" d="M27.6 42.4c-4.9 0-9.2-2-12.3-5.3l5.1-4c3 3.3 7.3 5.4 12.3 5.4 4.5 0 8.3-2.1 11-5.6l5 4.3c-3.7 4.9-8.9 7.7-14.7 7.7z"></path><path fill="#1976D2" d="M43.6 20.4H24v7h11.3c-.6 3.4-3.5 6.1-7.9 6.1-5.3 0-9.6-4.3-9.6-9.6s4.3-9.6 9.6-9.6c2.5 0 4.6.9 6.3 2.6l4.4-4.2C38.6 10.9 33.6 8 27.6 8c-9.5 0-17.2 7.7-17.2 17.2s7.7 17.2 17.2 17.2c9.3 0 17.2-7.5 17.2-17.2 0-1.2-.1-2.4-.4-3.6z" opacity=".2"></path><path fill="#1976D2" d="M43.6 20.4H24v7h11.3c-.6 3.4-3.5 6.1-7.9 6.1-5.3 0-9.6-4.3-9.6-9.6s4.3-9.6 9.6-9.6c2.5 0 4.6.9 6.3 2.6l4.4-4.2C38.6 10.9 33.6 8 27.6 8c-9.5 0-17.2 7.7-17.2 17.2s7.7 17.2 17.2 17.2c9.3 0 17.2-7.5 17.2-17.2 0-1.2-.1-2.4-.4-3.6z" opacity=".2"></path></svg>
+                Продовжити з Google
+            </button>
+
+            <button class="w-full py-4 mb-4 rounded-full text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 transition shadow-lg shadow-blue-500/50">
+                Продовжити з Facebook
+            </button>
+
+            <div class="flex items-center my-4">
+                <hr class="flex-grow border-t border-gray-300">
+                <span class="px-3 text-gray-500 text-sm">АБО</span>
+                <hr class="flex-grow border-t border-gray-300">
+            </div>
+
+            <button class="w-full py-4 rounded-full text-lg font-semibold text-white bg-gray-800 hover:bg-gray-900 transition shadow-lg shadow-gray-700/50">
+                Увійти за допомогою Email
+            </button>
+            
+            <p class="text-center text-xs text-gray-400 mt-6">
+                Натискаючи "Продовжити", ви погоджуєтеся з нашими 
+                <a href="#" class="font-medium hover:underline">Умовами використання</a> та 
+                <a href="#" class="font-medium hover:underline">Політикою конфіденційності</a>.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
